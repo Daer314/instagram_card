@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Test coloredbyte</title>
+        <link 
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <span class="profilePic" alt="profile picture"></span>
+            <div class="headerWrapper">
+                <h4 class="profileName">Erik Dunlop</h4>
+                <p class="city">San Francisco, California</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="wrapper">
+                  <img src="https://picsum.photos/526/325" class="swiper-slide"></img>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            <span class="pictures"></span>
+            <div class="iconWrapper">
+                <i class="likeIcon" id="like"></i>
+                <i class="commentIcon"></i>
+                <i class="shareIcon"></i>
+            </div>
+            <p class="text"><span class="bold">Lucas Credie</span> dolor sit amet, 
+                consectetur adipiscing elit. 
+                Mi enim ut eu cras ultrices eget et tristique proin. 
+                Mi enim ut eu cras ultrices eget et tristique proin.
+            </p>
+            <ul class="commentsWrapper" id="list">
+                <li><span class="bold">Comment</span> consectetur adipiscing elit. 
+                    Mi enim ut eu cras ultrices eget et 
+                </li>
+            </ul>
+            <form class="post">
+                <input class="input" id="input">
+                <button class="button" id="button">Post</button>
+            </form>
+        </div>
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </body>
+</html>
