@@ -82,20 +82,10 @@ body {
 }
 
 .likeIcon {
-    width: 24px;
-    height: 20.85px;    
-
-    position: absolute;
-    top: 6.46%;
-    bottom: 6.67%;
-    
+    color: black;
+    fill: red;
     cursor: pointer;
-    box-sizing: border-box;
-    content: url('./Icons/likeIcon.svg');
-}
-
-.toggle {
-    background-color: red;
+    /* content: url('./Icons/heart.svg'); */
 }
 
 .commentIcon {

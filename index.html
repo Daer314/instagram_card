@@ -8,6 +8,8 @@
             rel="stylesheet"
             href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
         />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <script src="https://unpkg.com/feather-icons"></script>
     </head>
     <body>
         <div class="container">
@@ -26,8 +28,8 @@
               </div>
             <span class="pictures"></span>
             <div class="iconWrapper">
-                <i class="likeIcon" id="like"></i>
-                <i class="commentIcon"></i>
+                <i data-feather="heart" class="likeIcon" id="like"></i>
+                <i class="commentIcon" id="comment"></i>
                 <i class="shareIcon"></i>
             </div>
             <p class="text"><span class="bold">Lucas Credie</span> dolor sit amet, 
@@ -47,6 +49,10 @@
         </div>
         <script src="./script.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+            feather.replace()
+        </script>
         <script>
             var swiper = new Swiper(".mySwiper", {
                 pagination: {

@@ -1,7 +1,7 @@
-const likeButton = document.getElementById('like');
 const input = document.getElementById('input');
 const postButton = document.getElementById('button');
 const ul = document.querySelector('ul')
+
 
 function fetchData(){
     fetch('https://picsum.photos/v2/list?page=2&limit=100')
@@ -27,17 +27,25 @@ function fetchData(){
 
                 return  img
             })
-            /*document.getElementById('swiper-slide').src = html[0]*/
         })
         .catch(error => console.log(error))
 }
 
 fetchData()
 
+const likeButton = document.getElementById('like');
 
 likeButton.addEventListener('click', function(){
-    likeButton.classList.add('toggle')
+    console.log('Holaaaaaaa')
 })
+
+const comment = document.getElementById('comment');
+
+comment.addEventListener('click', function(){
+    console.log('Holaaaaaaa')
+})
+
+
 
 postButton.addEventListener('click', function(){
 
